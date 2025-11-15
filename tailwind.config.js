@@ -1,4 +1,3 @@
-
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -18,6 +17,10 @@ module.exports = {
           800: '#973119',
           900: '#7a2c18',
         }
+      },
+      fontFamily: {
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Inter', 'sans-serif'],
       }
     },
   },
