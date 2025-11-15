@@ -1,4 +1,3 @@
-// For now, using placeholder images. Replace with your actual images later.
 export const rooms = [
     {
         id: 1,
