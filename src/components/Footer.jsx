@@ -40,29 +40,56 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="font-semibold mb-4">Contact Us</h4>
-                        <ul className="space-y-2 text-gray-300">
-                            <li>123 Hotel Street, City</li>
-                            <li>+1 (555) 123-4567</li>
-                            <li>info@luxuryhotel.com</li>
+                        <h4 className="font-semibold text-burnt-orange-300 mb-4 text-lg">Contact</h4>
+                        <ul className="space-y-3 text-gray-300 text-sm">
+                            <li className="flex items-start">
+                                <span className="mr-3 text-burnt-orange-400">📍</span>
+                                <span>123 Luxury Avenue<br />City, State 12345</span>
+                            </li>
+                            <li className="flex items-center">
+                                <span className="mr-3 text-burnt-orange-400">📞</span>
+                                +1 (555) 123-4567
+                            </li>
+                            <li className="flex items-center">
+                                <span className="mr-3 text-burnt-orange-400">✉️</span>
+                                welcome@galpinsuites.com
+                            </li>
                         </ul>
                     </div>
 
-                    {/* Social Media */}
+                    {/* Newsletter */}
                     <div>
-                        <h4 className="font-semibold mb-4">Follow Us</h4>
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-gray-300 hover:text-white">
-                                <span className="sr-only">Facebook</span>
-                                {/* Add social media icons here */}
-                            </a>
-                            {/* Add other social media links */}
+                        <h4 className="font-semibold text-burnt-orange-300 mb-4 text-lg">Stay Updated</h4>
+                        <p className="text-gray-300 text-sm mb-4">Get exclusive offers and updates</p>
+                        <div className="flex flex-col space-y-3">
+                            <input
+                                type="email"
+                                placeholder="Your email address"
+                                className="px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-burnt-orange-500 text-sm placeholder-gray-400"
+                            />
+                            <button className="bg-burnt-orange-600 hover:bg-burnt-orange-700 px-6 py-3 rounded-lg transition-colors duration-300 font-semibold text-sm">
+                                Subscribe
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-                    <p>&copy; 2024 Luxury Hotel. All rights reserved.</p>
+                {/* Bottom Bar */}
+                <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p className="text-gray-400 text-sm text-center md:text-left">
+                        © 2024 Galpin Suites. All rights reserved. | Crafted with ❤️ and burnt orange elegance
+                    </p>
+                    <div className="flex space-x-4 mt-4 md:mt-0">
+                        {['Facebook', 'Instagram', 'Twitter', 'LinkedIn'].map((social) => (
+                            <a
+                                key={social}
+                                href="#"
+                                className="text-gray-400 hover:text-burnt-orange-400 transition-colors duration-300 text-sm"
+                            >
+                                {social}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         </footer>
