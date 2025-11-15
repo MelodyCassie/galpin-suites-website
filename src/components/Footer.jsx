@@ -1,14 +1,23 @@
-// src/components/Footer.jsx
+
 const Footer = () => {
     return (
-        <footer className="bg-gray-800 text-white">
-            <div className="container mx-auto px-4 py-8">
+        <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
+            <div className="container mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Hotel Info */}
-                    <div>
-                        <h3 className="text-xl font-bold mb-4">Luxury Hotel</h3>
-                        <p className="text-gray-300">
-                            Experience unparalleled luxury and comfort in the heart of the city.
+                    {/* Brand Section */}
+                    <div className="md:col-span-1">
+                        <div className="flex items-center space-x-3 mb-4">
+                            <div className="w-10 h-10 bg-gradient-to-br from-burnt-orange-500 to-orange-600 rounded-full flex items-center justify-center">
+                                <span className="text-white font-bold">GS</span>
+                            </div>
+                            <div>
+                                <div className="text-2xl font-bold text-burnt-orange-400">Galpin Suites</div>
+                                <div className="text-xs text-gray-400 tracking-wider">LUXURY REDEFINED</div>
+                            </div>
+                        </div>
+                        <p className="text-gray-300 leading-relaxed text-sm">
+                            Experience unparalleled luxury where every detail is crafted to perfection.
+                            Your urban oasis awaits at Galpin Suites.
                         </p>
                     </div>
 
